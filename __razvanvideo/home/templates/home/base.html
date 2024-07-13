@@ -1,0 +1,140 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <meta name="description" content="Portfolio HTML5 Template">
+        <meta name="author" content="">
+
+        <!-- Block title -->
+        {% block title %}
+        {% endblock %}
+
+        <!-- Favicon and touch Icons -->
+        <link href="{% static 'home/images/favicon.png' %}" rel="shortcut icon" type="image/png">
+        <link href="{% static 'home/images/apple-touch-icon.png' %}" rel="apple-touch-icon">
+        <link href="{% static 'home/images/apple-touch-icon-72x72.png' %}" rel="apple-touch-icon" sizes="72x72">
+
+        <link href="{% static 'home/images/apple-touch-icon-114x114.png' %}" rel="apple-touch-icon" sizes="114x114">
+        <link href="{% static 'home/images/apple-touch-icon-144x144.png' %}" rel="apple-touch-icon" sizes="144x144">
+
+        <!-- Lead Style -->
+        <link href="{% static 'home/css/style.css' %}" rel="stylesheet" type="text/css">
+    </head>
+
+	
+	<!-- Preloader -->
+	<div class="oculoader">
+		<div class="loader"></div>
+		<div class="top-side"></div>
+		<div class="bottom-side"></div>
+	</div>
+	<!--PreLoader End-->
+	
+    <body class="body_box dark_mode">
+		
+		<div class="wrapper">
+			<!-- Start Header -->
+	        <header id="header" class="header_one">
+	            <div class="nav-bar">
+					<div class="navigation">
+						<div class="logo">
+							<a href="{% url 'home' %}"><img src="{% static 'home/images/cropped-cropped-Razvan-video-Constanta-logo.png' %}" alt="logo"></a>
+						</div>
+						<nav id="flexmenu">
+							<div class="nav-inner">
+								<ul class="main-menu">
+									<li class="menu-item {% if request.resolver_match.url_name == 'home' %}active{% endif %}"><a href="{% url 'home' %}">Home</a>
+										
+									</li>
+									<li class="menu-item"><a href="#">Portfoliu</a>
+										<ul class="sub-menu">
+											<li class="menu-item {% if request.resolver_match.url_name == 'toate-videoclipurile-constanta' %}active{% endif %}"><a href="{% url 'toate-videoclipurile-constanta' %}">Toate videoclipurile</a></li>
+											<li class="menu-item"><a href="portfolio-2.html">Nunta</a></li>
+											<li class="menu-item"><a href="portfolio-3.html">Botez</a></li>
+											<li class="menu-item"><a href="portfolio-4.html">Si alte evenimente</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="aboutus-1.html">Despre mine</a>
+									</li>
+									<li class="menu-item"><a href="contact-1.html">Contactati-ma</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+						<div class="nav-more-info">
+							<div class="element">
+								<div id="mobile-toggle" class="mobile-btn">
+									<span class="toggle_line"></span>
+									<span class="toggle_line"></span>
+									<span class="toggle_line"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+	            </div>
+
+	            <div class="overlaynav">
+	                <a href="#" class="overlaynavclose">&times;</a>
+	                <nav id="overlaymenu">
+	                	<ul class="main-menu">
+	                		<li class="menu-item active"><a  href="{% url 'home' %}">Home</a>
+							</li>
+							<li class="menu-item"><a href="#">Portfoliu</a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="{% url 'toate-videoclipurile-constanta' %}">Toate videoclipurile</a></li>
+									<li class="menu-item"><a href="portfolio-2.html">Nunta</a></li>
+									<li class="menu-item"><a href="portfolio-3.html">Botez</a></li>
+									<li class="menu-item"><a href="portfolio-4.html">Si alte evenimente</a></li>
+								</ul>
+							</li>
+							<li class="menu-item"><a href="aboutus-1.html">Despre mine</a>
+							</li>
+							<li class="menu-item"><a href="contact-1.html">Contactati-ma</a>
+							</li>
+						</ul>
+	                </nav>
+	            </div>
+	        </header>
+	        
+    <!-- block content -->     
+    {% block content %}
+
+    {% endblock %}
+
+			<footer class="footer">
+				<div class="footer_inner">
+					<div class="copyright">
+						<p> &copy;Oculus 2020. All rights reserved</p>
+					</div>
+					<div class="social-icon">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	
+        <!-- All JavaScript Files
+        ================================================== -->
+        <script src="{% static 'home/js/jquery-3.2.1.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'home/js/bootstrap.js' %}" type="text/javascript"></script>
+        <script src="{% static 'home/js/isotope.pkgd.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'home/js/imagesloaded.pkgd.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'home/js/jquery.fancybox.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'home/js/swiper.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'home/js/typed.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'home/js/menu.js' %}" type="text/javascript"></script>
+		<script src="{% static 'home/js/grid.custom.js' %}" type="text/javascript"></script>
+        <script src="{% static 'home/js/custom.js' %}" type="text/javascript"></script>
+	</body>
+</html>
