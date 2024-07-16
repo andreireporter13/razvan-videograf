@@ -4799,3 +4799,51 @@ ul.comment-area{
               transform: translateX(100%) scale(0);
     }
 }
+
+
+/*----- personal CSS -----*/
+/* Stil pentru imaginea de thumbnail */
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Stil pentru containerul thumb */
+.thumb {
+    position: relative;
+    width: 560px;  /* Ajustează dimensiunile după necesități */
+    height: 356px; /* Ajustează dimensiunile după necesități */
+    overflow: hidden;
+}
+
+/* Stil pentru overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semitransparent negru, mai deschis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Stil pentru wrapper-ul butonului de redare */
+.play-button-wrapper {
+    width: 100px;  /* Ajustează dimensiunile după necesități */
+    height: 100px; /* Ajustează dimensiunile după necesități */
+    background-color: rgba(255, 255, 255, 0.7); /* Semitransparent alb */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stil pentru butonul de redare */
+.play-button {
+    font-size: 50px;  /* Ajustează dimensiunile după necesități */
+    color: black;
+}
