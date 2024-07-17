@@ -13,8 +13,19 @@ class HomePageView(TemplateView):
 class ToateVideoclipurilePageView(TemplateView):
     template_name = 'home/toate-videoclipurile.html'
 
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     current_filter = self.request.GET.get('filter', '*')
-    #     context['current_filter'] = current_filter
-    #     return context
+class PortofoliuNuntaPageView(TemplateView):
+    template_name = 'home/portofoliu-nunta-Constanta.html'
+
+class PortofoliuBotezPageView(TemplateView):
+    template_name = 'home/portofoliu-botez.html'
+
+class PortofoliuAlteEvenimentePageView(TemplateView):
+    template_name = 'home/portofoliu-alte-evenimente-Constanta.html'
+
+class DespreMinePageView(TemplateView):
+    template_name = 'home/despre-mine.html'
+
+class ContactPageView(TemplateView):
+    template_name = 'home/contact.html'
+
+    

@@ -58,14 +58,14 @@
 									<li class="menu-item"><a href="#">Portfoliu</a>
 										<ul class="sub-menu">
 											<li class="menu-item {% if request.resolver_match.url_name == 'toate-videoclipurile-constanta' %}active{% endif %}"><a href="{% url 'toate-videoclipurile-constanta' %}">Toate videoclipurile</a></li>
-											<li class="menu-item"><a href="portfolio-2.html">Nunta</a></li>
-											<li class="menu-item"><a href="portfolio-3.html">Botez</a></li>
-											<li class="menu-item"><a href="portfolio-4.html">Si alte evenimente</a></li>
+											<li class="menu-item"><a href="{% url 'video-nunta-constanta' %}">Nunta</a></li>
+											<li class="menu-item"><a href="{% url 'video-botez-constanta' %}">Botez</a></li>
+											<li class="menu-item"><a href="{% url 'alte-evenimente-constanta' %}">Si alte evenimente</a></li>
 										</ul>
 									</li>
-									<li class="menu-item"><a href="aboutus-1.html">Despre mine</a>
+									<li class="menu-item"><a href="{% url 'despre-mine' %}">Despre mine</a>
 									</li>
-									<li class="menu-item"><a href="contact-1.html">Contactati-ma</a>
+									<li class="menu-item"><a href="{% url 'contact-constanta' %}">Contactati-ma</a>
 									</li>
 								</ul>
 							</div>
@@ -91,14 +91,14 @@
 							<li class="menu-item"><a href="#">Portfoliu</a>
 								<ul class="sub-menu">
 									<li class="menu-item"><a href="{% url 'toate-videoclipurile-constanta' %}">Toate videoclipurile</a></li>
-									<li class="menu-item"><a href="portfolio-2.html">Nunta</a></li>
-									<li class="menu-item"><a href="portfolio-3.html">Botez</a></li>
-									<li class="menu-item"><a href="portfolio-4.html">Si alte evenimente</a></li>
+									<li class="menu-item"><a href="{% url 'video-nunta-constanta' %}">Nunta</a></li>
+									<li class="menu-item"><a href="{% url 'video-botez-constanta' %}">Botez</a></li>
+									<li class="menu-item"><a href="{% url 'alte-evenimente-constanta' %}">Si alte evenimente</a></li>
 								</ul>
 							</li>
-							<li class="menu-item"><a href="aboutus-1.html">Despre mine</a>
+							<li class="menu-item"><a href="{% url 'despre-mine' %}">Despre mine</a>
 							</li>
-							<li class="menu-item"><a href="contact-1.html">Contactati-ma</a>
+							<li class="menu-item"><a href="{% url 'contact-constanta' %}">Contactati-ma</a>
 							</li>
 						</ul>
 	                </nav>
@@ -113,7 +113,7 @@
 			<footer class="footer">
 				<div class="footer_inner">
 					<div class="copyright">
-						<p> &copy;Oculus 2020. All rights reserved</p>
+						<p>Razvan Mirica - Videograf - 2024</p>
 					</div>
 					<div class="social-icon">
 						<ul>

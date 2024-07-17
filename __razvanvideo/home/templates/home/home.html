@@ -1,7 +1,6 @@
 {% extends 'home/base.html' %}
 {% load static %}
 
-
 <!-- Block title -->
 {% block title %}
 <title>Razvan Videograf Constanta</title>
@@ -21,7 +20,7 @@
 									<h4 class="slider-tag">Videograf Constanta</h4>
 									<h1 class="slide_heading"><span>Razvan Video</span></h1>
 									<div class="button_group">
-										<a href="http://wpthemebooster.com/demo/themeforest/html/oculus/portfolio-1.html" class="button effect_1 fade_black_button"><span>Explore Gallery</span></a>
+										<a href="{% url 'toate-videoclipurile-constanta' %}" class="button effect_1 fade_black_button"><span>Vezi toate videoclipurile</span></a>
 									</div>
 								</div>
 								<a class="popup fancyswiper" href="{% static 'home/images/slider/razvan-video-videograf-nunta-starea-civila-cununie-religioasa.jpg' %}" data-fancybox="images">
@@ -37,7 +36,7 @@
 									<h4 class="slider-tag">Evenimente</h4>
 									<h1 class="slide_heading"><span>Nunta</span></h1>
 									<div class="button_group">
-										<a href="http://wpthemebooster.com/demo/themeforest/html/oculus/portfolio-2.html" class="button effect_2 fade_black_button"><span>Explore Gallery</span></a>
+										<a href="{% url 'video-nunta-constanta' %}" class="button effect_2 fade_black_button"><span>Portofoliu Nunta</span></a>
 									</div>
 								</div>
 								<a class="popup fancyswiper" href="{% static 'home/images/slider/razvan-video-Constanta-filmari-nunta-botez.jpg' %}" data-fancybox="images">
@@ -53,7 +52,7 @@
 									<h4 class="slider-tag">Momente unice</h4>
 									<h1 class="slide_heading"><span>Botez</span></h1>
 									<div class="button_group">
-										<a href="http://wpthemebooster.com/demo/themeforest/html/oculus/portfolio-3.html" class="button effect_1 fade_black_button"><span>Explore Gallery</span></a>
+										<a href="{% url 'video-botez-constanta' %}" class="button effect_1 fade_black_button"><span>Portofoliu Botez</span></a>
 									</div>
 								</div>
 								<a class="popup fancyswiper" href="{% static 'home/images/slider/razvan-video-constanta-video-botez-evenimente-bebelusi-video-la-biserica.jpg' %}" data-fancybox="images">
@@ -69,7 +68,7 @@
 									<h4 class="slider-tag">Si alte evenimente</h4>
 									<h1 class="slide_heading"><span>Motul</span></h1>
 									<div class="button_group">
-										<a href="http://wpthemebooster.com/demo/themeforest/html/oculus/portfolio-4.html" class="button effect_3 fade_black_button"><span>Explore Gallery</span></a>
+										<a href="{% url 'alte-evenimente-constanta' %}" class="button effect_3 fade_black_button"><span>Alte evenimente</span></a>
 									</div>
 								</div>
 								<a class="popup fancyswiper" href="{% static 'home/images/slider/video-evenimente-zile-de-nastere-clipuri-mot.jpg' %}" data-fancybox="images">
