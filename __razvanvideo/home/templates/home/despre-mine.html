@@ -8,30 +8,375 @@
 
 <!-- Block content -->
 {% block content %}
-	
-	<div class="inner_body">
-		<div class="about_me">
-			<div class="container">
+
+<!-- 	
+	{% static 'home/images/despre-mine/despre-mine-videograf-Constanta.jpg' %}		-->
+	<div class="inner_body bg_gray">
+		<!-- Page Header -->
+		<div class="page-header type2">
+			<div class="page-header-content text-center">
+				<div class="container">
+					<h1 class="heading">
+						Depre mine - Razvan Mirica
+						<span class="icon"><i class="fa fa-camera"></i></span>
+					</h1>
+					<p>Hai sa ne cunoastem mai bine!</p>
+					<div class="sign"><img src="{% static 'home/images/sign.png' %}" alt=""></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="feature_inner_box_2">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-6">
-						<div class="about-details">
-							<h3>about me</h3>
-							<p>Integer vel congue orci. In iaculis dui vel odio varius, sed pretium dui vehicula. Mauris imperdiet turpis ut ligula condimentum, ut eleifend mauris efficitur. Praesent consectetur vel dolor a faucibus. Nulla lobortis sit amet metus id blandit. Integer pulvinar lacus quis mauris commodo, vitae lacinia augue semper. </p>
-							<p>Cras fermentum sit amet mauris id aliquet. Quisque risus arcu, interdum sit amet sapien quis, euismod fringilla arcu. Phasellus non venenatis nisi. Quisque vestibulum metus nisi. Vivamus cursus dolor at odio auctor, nec consequat massa sodales nec consequat. </p>
-							<ul class="about_list">
-								<li>In iaculis dui vel odio varius sed pretium dui vehicula</li>
-								<li>Nulla lobortis sit amet metus id blandit integer pulvinar</li>
-								<li>Cras fermentum sit amet mauris id aliquet quisque risus</li>
-							</ul>
-							<img src="{% static 'home/images/sign-color.png' %}" alt="sign">
+					<div class="col-md-4 p-0">
+						<div class="img-middle-icon-box bg-222">
+							<img src="{% static 'home/images/icon-img/1.png' %}" alt="icon">
+							<h3>Short Film Production</h3>
+							<p>Vestibulum id dapibus ante, in feugiat nisl. Etiam id lacus 
+							et tellus consequat tempus.</p>
+							<a href="#"><i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+					<div class="col-md-4 p-0">
+						<div class="img-middle-icon-box bg-2525">
+							<img src="{% static 'home/images/icon-img/2.png' %}" alt="icon">
+							<h3>Party Video Editing</h3>
+							<p>Vestibulum id dapibus ante, in feugiat nisl. Etiam id lacus 
+							et tellus consequat tempus.</p>
+							<a href="#"><i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+					<div class="col-md-4 p-0">
+						<div class="img-middle-icon-box bg-2929">
+							<img src="{% static 'home/images/icon-img/3.png' %}" alt="icon">
+							<h3>Special Moment Capture</h3>
+							<p>Vestibulum id dapibus ante, in feugiat nisl. Etiam id lacus 
+							et tellus consequat tempus.</p>
+							<a href="#"><i class="fa fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		
+		<br>
+		<section class="blockquote_sec">
+			<div class="container">
+				<div class="content_title">Blockquote Styles</div>
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="blockquote_content">
+							<blockquote class="blockquote type2">
+								  <p>"Lorem ipsum dolor sit amet consectetu adipisicing elit sed do loa eiusmod tempor incididunt ut labore et sed dui exea dolore."</p>
+								  <div class="title">Anders Angstrom</div>
+								  <div class="designation">Art director</div>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<br>
+
+		<section class="testimonials type2 bg_dark">
+			<div class="container">
+				<div class="content_title">Testimonials</div>
+				<div class="testimonial-carousel">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="slider_item">
+									<div class="testibox1">
+										<div class="testi-img">
+											<img src="images/commenter.png" alt="">
+										</div>
+										<div class="testi-content">
+											<h4>Jeny Doe</h4>
+											<h6>CEO, Advertising Corp</h6>
+											<p>Lorem ipsum dolor sit amet consecteur adipiscing elit sed eiusmod tempor ncididue labor doloremagna aliqua. Ut eniexercitat ullamco laborisnisi ut aliquip commodo consequatduis autes adm irure. Labor doloremagna aliqua. Ut enim nim veniam qu nostrud</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider_item">
+									<div class="testibox1">
+										<div class="testi-img">
+											<img src="images/commenter2.png" alt="">
+										</div>
+										<div class="testi-content">
+											<h4>Lily Deny</h4>
+											<h6>CEO, Advertising Corp</h6>
+											<p>Lorem ipsum dolor sit amet consecteur adipiscing elit sed eiusmod tempor ncididue labor doloremagna aliqua. Ut eniexercitat ullamco laborisnisi ut aliquip commodo consequatduis autes adm irure. Labor doloremagna aliqua. Ut enim nim veniam qu nostrud</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider_item">
+									<div class="testibox1">
+										<div class="testi-img">
+											<img src="images/commenter3.png" alt="">
+										</div>
+										<div class="testi-content">
+											<h4>ogers Croe</h4>
+											<h6>CEO, Advertising Corp</h6>
+											<p>Lorem ipsum dolor sit amet consecteur adipiscing elit sed eiusmod tempor ncididue labor doloremagna aliqua. Ut eniexercitat ullamco laborisnisi ut aliquip commodo consequatduis autes adm irure. Labor doloremagna aliqua. Ut enim nim veniam qu nostrud</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+					<div class="swiper-controller">
+						<!-- If we need navigation buttons -->
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<br>
+		
+		<section class="blockquote_sec">
+			<div class="container">
+				<div class="content_title">Blockquote Styles</div>
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="blockquote_content">
+							<blockquote class="blockquote type2">
+								  <p>"Lorem ipsum dolor sit amet consectetu adipisicing elit sed do loa eiusmod tempor incididunt ut labore et sed dui exea dolore."</p>
+								  <div class="title">Anders Angstrom</div>
+								  <div class="designation">Art director</div>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<br>
+
+		<div class="banner_2">
+			<div class="grid masonary grid-10 gutter-5 clearfix">	
+				<div class="grid-sizer"></div>							
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/1.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/1.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item image-20">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/17.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/17.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/2.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/2.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/3.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/3.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/4.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/4.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/4.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/4.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item image-20">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/18.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/18.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/6.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/6.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/7.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/7.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/8.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/8.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/9.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/9.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/10.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/10.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/11.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/11.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/12.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/12.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item image-20">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/19.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/19.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/13.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/13.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/14.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/14.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/15.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/15.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/16.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/16.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/2.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/2.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/3.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/3.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item image-20">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/20.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/20.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/4.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/4.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/5.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/5.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/6.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/6.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/7.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/7.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/1.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/1.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="thumb">
+						<a class="popup fancyportfolio" href="{% static 'home/images/instagram/2.png' %}" data-fancybox="images">
+							<img class="item_image" src="{% static 'home/images/instagram/2.png' %}" alt=""/>
+						</a>
+					</div>
+				</div>						
+				
+			</div>
+
+			<div class="banner_inner">
+				<div class="banner_content">
+					<h2>We Catch Your Moment</h2>
+					<p>Aenean feugiat libero ligula, eget<br> cursus ipsum laoreet</p>
+				</div>
+			</div>
+		</div>
+		
 	</div>
-	
-	<div class="page_title"><span>Despre mine</span></div>
+
+	<div class="page_title"><span>About Us</span></div>
+
 
 {% endblock %}

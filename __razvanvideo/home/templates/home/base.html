@@ -55,13 +55,7 @@
 									<li class="menu-item {% if request.resolver_match.url_name == 'home' %}active{% endif %}"><a href="{% url 'home' %}">Home</a>
 										
 									</li>
-									<li class="menu-item"><a href="#">Portfoliu</a>
-										<ul class="sub-menu">
-											<li class="menu-item {% if request.resolver_match.url_name == 'toate-videoclipurile-constanta' %}active{% endif %}"><a href="{% url 'toate-videoclipurile-constanta' %}">Toate videoclipurile</a></li>
-											<li class="menu-item"><a href="{% url 'video-nunta-constanta' %}">Nunta</a></li>
-											<li class="menu-item"><a href="{% url 'video-botez-constanta' %}">Botez</a></li>
-											<li class="menu-item"><a href="{% url 'alte-evenimente-constanta' %}">Si alte evenimente</a></li>
-										</ul>
+									<li class="menu-item"><a href="{% url 'toate-videoclipurile-constanta' %}">Portfoliu</a>
 									</li>
 									<li class="menu-item"><a href="{% url 'despre-mine' %}">Despre mine</a>
 									</li>
@@ -86,19 +80,13 @@
 	                <a href="#" class="overlaynavclose">&times;</a>
 	                <nav id="overlaymenu">
 	                	<ul class="main-menu">
-	                		<li class="menu-item active"><a  href="{% url 'home' %}">Home</a>
+	                			<li class="menu-item active"><a  href="{% url 'home' %}">Home</a>
 							</li>
-							<li class="menu-item"><a href="#">Portfoliu</a>
-								<ul class="sub-menu">
-									<li class="menu-item"><a href="{% url 'toate-videoclipurile-constanta' %}">Toate videoclipurile</a></li>
-									<li class="menu-item"><a href="{% url 'video-nunta-constanta' %}">Nunta</a></li>
-									<li class="menu-item"><a href="{% url 'video-botez-constanta' %}">Botez</a></li>
-									<li class="menu-item"><a href="{% url 'alte-evenimente-constanta' %}">Si alte evenimente</a></li>
-								</ul>
+							<li class="menu-item"><a href="{% url 'toate-videoclipurile-constanta' %}">Portfoliu</a>
 							</li>
-							<li class="menu-item"><a href="{% url 'despre-mine' %}">Despre mine</a>
+								<li class="menu-item"><a href="{% url 'despre-mine' %}">Despre mine</a>
 							</li>
-							<li class="menu-item"><a href="{% url 'contact-constanta' %}">Contactati-ma</a>
+								<li class="menu-item"><a href="{% url 'contact-constanta' %}">Contactati-ma</a>
 							</li>
 						</ul>
 	                </nav>
